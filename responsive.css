@@ -1,0 +1,19 @@
+@media screen and (max-width:768px) {
+    .hero .description{
+        width:450px;
+    }
+    .hero .check-work-btn{
+        width: 250px;
+    }
+}
+@media  screen and (max-width:576px) {
+    .hero .name{
+        font-size: 4rem;
+    }
+    .hero .job-desc{
+        font-size: 3rem;
+    }
+    .hero .description{
+        width: 100%;
+    }
+}
