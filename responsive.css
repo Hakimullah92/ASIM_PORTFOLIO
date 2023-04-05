@@ -1,4 +1,25 @@
 @media screen and (max-width:991px) {
+    #navbarNav{
+        background:var(--navy) !important;
+        width: 300px;
+        height: 100vh;
+        display: flex !important;
+        align-items: center !important;
+        position: absolute;
+        top:0;
+        right: 0;
+        transform: translateX(100%);
+        transition: all 0.2s ease-in-out;
+    }
+    #navbarNav.active{
+        transform: translateX(0);
+    }
+    #navbarNav ul{
+        margin-right: 5rem;
+    }
+    #navbarNav #close{
+        display: block !important;
+    }
     .social-links{
         left: 2.5rem;
     }
@@ -13,6 +34,12 @@
 
 }
 @media  screen and (max-width:576px) {
+    #navbarNav{
+        width: 100%;
+    }
+    #navbarNav ul{
+        margin-right: 12rem;
+    }
     .hero .name{
         font-size: 4rem;
     }

@@ -76,15 +76,16 @@ bottom: 6px;
     position: absolute;
     bottom: 0;
     left: 5px;
-    top: 18rem;
+    top: 20rem;
 }
 .social-links i{
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--light-slate);
     transition: all 0.23s ease-in-out;
 }
 .social-links i:hover{
     color: var(--green);
+    transform: translateY(-5px);
 }
 
 /* ////////// Header Styling Start//////////// */
@@ -98,6 +99,16 @@ bottom: 6px;
     right:0;
     z-index: 999;
     opacity: 1;
+}
+#navbarNav #close{
+    position: absolute;
+    top: 15px;
+    right:18px;
+   transition: all 0.23s ease-in-out;
+   display: none !important;
+}
+#navbarNav #close:hover{
+    color: var(--green) !important;
 }
 .header .navbar{
     background:var(--light-navy);
@@ -141,7 +152,9 @@ bottom: 6px;
 }
 /* ////////// Header Styling End//////////// */
 
-
+body main.active{
+    filter: blur(3px);
+}
 /* ////////////// Hero Section Start/////////// */
 .hero{
     
