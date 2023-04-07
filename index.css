@@ -76,7 +76,7 @@ bottom: 6px;
     position: absolute;
     bottom: 0;
     left: 5px;
-    top: 20rem;
+    top: 15rem;
 }
 .social-links i{
     font-size: 2rem;
@@ -223,3 +223,61 @@ body main.active{
     font-weight: bold;
 }
 /* //////////// About Section End//////////// */
+
+
+/* //////////// Experience Styling Start/////////// */
+.experience{
+    /* border: 1px solid red; */
+    padding-top: 10rem;
+    width: 100%;
+    min-height: 100vh;
+}
+.experience .main-title:after{
+    content: '';
+    display: block;
+    background:var(--dark-slate);
+    width: 50%;
+    height: 1px;
+}
+.experience .main-title span{
+    color: var(--green);
+}
+.experience .main-title h1{
+    color: #fff;
+    font-weight: bold;
+}
+.experience .experience-links .nav-link{
+    color: var(--light-slate) !important;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 8px 10px;
+    transition: all 0.23s ease-in-out;
+}
+.experience .experience-links .nav-link:hover{
+    color: var(--green) !important;
+    background:var(--dark-slate);
+}
+.experience .experience-links .nav-link.show{
+    background:var(--dark-slate);
+    border-left: 3px solid var(--green);
+}
+
+.more-text{
+    display: none;
+}
+.job-description.show-text .more-text{
+    display: block;
+}
+.read-more-btn{
+    display: inline-block;
+    background:var(--green);
+    color: var(--lightest-navy);
+    border: none;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+/* //////////// Experience Styling End/////////// */

@@ -8,6 +8,7 @@ let navlinks=document.querySelectorAll(".nav-link"),
 console.log(navlinks);
 
 navlinks.forEach((item)=>{
+  
   item.addEventListener('click',()=>{
      navlinks.forEach((nav)=>{
       nav.classList.remove("active");
@@ -25,3 +26,33 @@ closeicon.addEventListener("click",()=>{
  main.classList.remove("active");
 });
 // Navlink active Functionality End
+
+
+// -------------- Experience Section JSCode Start------------------
+let ExperienceLinks=document.querySelectorAll(".nav .experience-link");
+console.log(ExperienceLinks);
+ExperienceLinks.forEach((ele)=>{
+  ele.addEventListener("click",(event)=>{
+    event.preventDefault();
+    ExperienceLinks.forEach((swit)=>{
+      swit.classList.remove("show");
+    });
+    ele.classList.add("show");
+    
+  });
+});
+
+
+let readmorebtn=document.querySelector(".read-more-btn");
+let jobdescription=document.querySelector(".job-description");
+
+readmorebtn.addEventListener("click",(e)=>{
+  jobdescription.classList.toggle("show-text");
+  if(readmorebtn.innerText=="Read More"){
+    readmorebtn.innerText="Read Less";
+  }
+  else{
+    readmorebtn.innerText="Read More"
+  }
+});
+// -------------- Experience Section JSCode End------------------
