@@ -229,6 +229,7 @@ body main.active{
 .experience{
     /* border: 1px solid red; */
     padding-top: 10rem;
+    padding-bottom: 0.5rem;
     width: 100%;
     min-height: 100vh;
 }
@@ -246,6 +247,10 @@ body main.active{
     color: #fff;
     font-weight: bold;
 }
+.experience .experience-links .nav{
+    border-left: 2px solid grey;
+    border-radius: 3px;
+}
 .experience .experience-links .nav-link{
     color: var(--light-slate) !important;
     font-size: 1.3rem;
@@ -260,6 +265,13 @@ body main.active{
 .experience .experience-links .nav-link.show{
     background:var(--dark-slate);
     border-left: 3px solid var(--green);
+    border-radius: 3px;
+}
+.experience .experience-content .actual-content{
+    display: none;
+}
+.experience .experience-content .actual-content.show{
+    display: block;
 }
 
 .more-text{
@@ -281,3 +293,40 @@ body main.active{
     border-radius: 4px;
 }
 /* //////////// Experience Styling End/////////// */
+
+
+/* /////////////// Certifications Styling Start ///////////// */
+.certifications{
+    padding-top: 10rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    min-height: 100vh;
+}
+.certifications .main-title:after{
+    content: '';
+    display: block;
+    background:var(--dark-slate);
+    width: 50%;
+    height: 1px;
+}
+.certifications .main-title span{
+    color: var(--green);
+}
+.certifications .main-title h1{
+    color: #fff;
+    font-weight: bold;
+}
+.certifications .single-item{
+    padding: 2rem;
+    
+}
+.certifications .single-item .certificate-img{
+    background:url(/Images/Certificate-Images/one.PNG);
+    background-size: cover;
+    background-position: top;
+    transition: all 0.2s ease-in-out;
+}
+.certifications .single-item .certificate-img:hover{
+    background-position: bottom;
+}
+/* /////////////// Certifications Styling End ///////////// */

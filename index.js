@@ -30,16 +30,24 @@ closeicon.addEventListener("click",()=>{
 
 // -------------- Experience Section JSCode Start------------------
 let ExperienceLinks=document.querySelectorAll(".nav .experience-link");
+let ExperienceContent=document.querySelectorAll(".experience-content .actual-content");
 console.log(ExperienceLinks);
-ExperienceLinks.forEach((ele)=>{
-  ele.addEventListener("click",(event)=>{
+ExperienceLinks.forEach((item)=>{
+item.addEventListener("click",(event)=>{
     event.preventDefault();
-    ExperienceLinks.forEach((swit)=>{
-      swit.classList.remove("show");
+    const content=document.querySelector(item.dataset.target);
+    // console.log(content);
+    ExperienceLinks.forEach((ele)=>{
+      ele.classList.remove("show");
     });
-    ele.classList.add("show");
-    
-  });
+
+    ExperienceContent.forEach((ele)=>{
+      ele.classList.remove("show");
+    });
+    content.classList.add("show");
+    item.classList.add("show");
+
+});
 });
 
 
