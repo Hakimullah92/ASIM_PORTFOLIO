@@ -51,16 +51,13 @@ item.addEventListener("click",(event)=>{
 });
 
 
-let readmorebtn=document.querySelector(".read-more-btn");
+let readmorebtn=document.querySelectorAll(".read-more-btn");
 let jobdescription=document.querySelector(".job-description");
+console.log(readmorebtn);
 
-readmorebtn.addEventListener("click",(e)=>{
+readmorebtn.forEach((item)=>{
+item.addEventListener("click",()=>{
   jobdescription.classList.toggle("show-text");
-  if(readmorebtn.innerText=="Read More"){
-    readmorebtn.innerText="Read Less";
-  }
-  else{
-    readmorebtn.innerText="Read More"
-  }
+})
 });
 // -------------- Experience Section JSCode End------------------

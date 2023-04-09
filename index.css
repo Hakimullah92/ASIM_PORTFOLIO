@@ -316,17 +316,86 @@ body main.active{
     color: #fff;
     font-weight: bold;
 }
-.certifications .single-item{
-    padding: 2rem;
-    
+.certifications .cards-container{
+    background:var(--lightest-navy) !important;
+    width: 85%;
+    margin: 7rem auto;
+    padding: 1rem 0;
+    border-radius: 12px !important;
 }
-.certifications .single-item .certificate-img{
-    background:url(/Images/Certificate-Images/one.PNG);
-    background-size: cover;
-    background-position: top;
-    transition: all 0.2s ease-in-out;
+.cards-container .single-item .certificate-description .institute-name{
+   color: #fff !important;
 }
-.certifications .single-item .certificate-img:hover{
-    background-position: bottom;
+.view-certificate-btn{
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid var(--green);
+    padding: 0.6rem 1rem;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    border-radius: 4px;
+    text-transform: capitalize;
+    color:var(--green);
+    transition: all 0.3s ease-in-out;
 }
+ .view-certificate-btn:hover{
+    background:var(--green-tint);
+    color: #fff !important;
+}
+
 /* /////////////// Certifications Styling End ///////////// */
+
+
+
+/* //////////// Contact Styling Start///////////// */
+.contact{
+    padding-top: 10rem;
+    width: 100%;
+    min-height: 100vh;
+}
+.contact .row{
+    margin-top: 10rem;
+}
+.contact .row .main-title{
+    color: var(--green);
+    font-size: 1.8rem;
+}
+.contact .row .title{
+    color: var(--lightest-slate);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.contact .row .contact-desc{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.contact .row .contact-btn{
+    width: 220px;
+    height: 50px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid var(--green);
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    border-radius: 4px;
+    text-transform: capitalize;
+    color:var(--green);
+    transition: all 0.3s ease-in-out;
+}
+.contact .row .contact-btn:hover{
+    background:var(--green-tint);
+    color: #fff !important;
+}
+/* //////////// Contact Styling End///////////// */
+
+.footer a{
+    color: var(--light-slate);
+    text-decoration: none !important;
+    transition: all 0.23s ease-in-out;
+}
+.footer a:hover{
+    color: var(--green);
+}

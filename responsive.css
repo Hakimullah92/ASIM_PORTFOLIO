@@ -1,3 +1,16 @@
+@media screen and (min-width:1200px) {
+    .cards-container .single-item .certificate-description .institute-name{
+        margin-bottom: 1.5rem;
+    }
+    .cards-container .single-item .certificate-description .course-name{
+        margin-bottom: 1.5rem !important;
+    }
+    .cards-container .single-item .certificate-description .course-desc{
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+        text-align: justify;
+    }
+}
 @media screen and (max-width:991px) {
     #navbarNav{
         background:var(--navy) !important;
