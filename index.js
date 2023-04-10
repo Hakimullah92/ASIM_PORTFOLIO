@@ -55,12 +55,14 @@ item.addEventListener("click",(event)=>{
 
 
 let readmorebtn=document.querySelectorAll(".read-more-btn");
-let jobdescription=document.querySelector(".job-description");
+let jobdescription=document.querySelectorAll(".job-description");
 console.log(readmorebtn);
 
 readmorebtn.forEach((item)=>{
 item.addEventListener("click",()=>{
-  jobdescription.classList.toggle("show-text");
+  for(let i=0; i<jobdescription.length; i++){
+    jobdescription[i].classList.toggle("show-text");
+  }
 })
 });
 // -------------- Experience Section JSCode End------------------
