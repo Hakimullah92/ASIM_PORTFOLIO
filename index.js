@@ -10,8 +10,11 @@ console.log(navlinks);
 navlinks.forEach((item)=>{
   
   item.addEventListener('click',()=>{
+    navbarlist.classList.remove("active");
+    main.classList.remove("active");
      navlinks.forEach((nav)=>{
       nav.classList.remove("active");
+      
      });
      item.classList.add('active');
   });

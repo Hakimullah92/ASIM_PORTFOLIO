@@ -39,7 +39,7 @@ body{
     font-size: 1.2rem;
     position: fixed;
     bottom: 25rem;
-    right:0;
+    right:-5rem;
     transform: rotate(90deg);
     transition: all 0.23s ease-in-out;
    
@@ -62,7 +62,7 @@ bottom: 6px;
 .social-links{
     position: fixed;
     bottom: 20rem;
-    left: 5rem;
+    left: 3rem;
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
@@ -266,6 +266,7 @@ body main.active{
     background:var(--dark-slate);
     border-left: 3px solid var(--green);
     border-radius: 3px;
+    transition: all 0.23s ease-in-out ;
 }
 .experience .experience-content .actual-content{
     display: none;
