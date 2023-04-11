@@ -5,7 +5,7 @@ let navlinks=document.querySelectorAll(".nav-link"),
      menuicon=document.querySelector("#menu"),
      closeicon=document.querySelector("#close"),
      main=document.getElementById("main");
-console.log(navlinks);
+// console.log(navlinks);
 
 navlinks.forEach((item)=>{
   
@@ -34,7 +34,7 @@ closeicon.addEventListener("click",()=>{
 // -------------- Experience Section JSCode Start------------------
 let ExperienceLinks=document.querySelectorAll(".nav .experience-link");
 let ExperienceContent=document.querySelectorAll(".experience-content .actual-content");
-console.log(ExperienceLinks);
+// console.log(ExperienceLinks);
 ExperienceLinks.forEach((item)=>{
 item.addEventListener("click",(event)=>{
     event.preventDefault();
@@ -56,13 +56,21 @@ item.addEventListener("click",(event)=>{
 
 let readmorebtn=document.querySelectorAll(".read-more-btn");
 let jobdescription=document.querySelectorAll(".job-description");
-console.log(readmorebtn);
+// console.log(readmorebtn);
 
 readmorebtn.forEach((item)=>{
-item.addEventListener("click",()=>{
+item.addEventListener("click",(ele)=>{
+  readmorebtn.forEach((a)=>{
+    if(a.innerText="Read More..."){
+      a.innerText="Read Less...";
+    }
+     else{
+      a.innerText="Read More..."
+     }
+  });
   for(let i=0; i<jobdescription.length; i++){
     jobdescription[i].classList.toggle("show-text");
   }
-})
+});
 });
 // -------------- Experience Section JSCode End------------------
