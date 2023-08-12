@@ -68,4 +68,9 @@
     .social-links{
         display: none;
     }
+    .projects .nextbtn{
+        right:1rem;
+        width: 3rem;
+    }
+    
 }

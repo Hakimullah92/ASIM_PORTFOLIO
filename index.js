@@ -52,25 +52,19 @@ item.addEventListener("click",(event)=>{
 
 });
 });
-
-
-// let readmorebtn=document.querySelectorAll(".read-more-btn");
-// let jobdescription=document.querySelectorAll(".job-description");
-// // console.log(readmorebtn);
-
-// readmorebtn.forEach((item)=>{
-// item.addEventListener("click",(ele)=>{
-//   readmorebtn.forEach((a)=>{
-//     if(a.innerText="Read More..."){
-//       a.innerText="Read Less...";
-//     }
-//      else{
-//       a.innerText="Read More..."
-//      }
-//   });
-//   for(let i=0; i<jobdescription.length; i++){
-//     jobdescription[i].classList.toggle("show-text");
-//   }
-// });
-// });
 // -------------- Experience Section JSCode End------------------
+
+
+// ------------- Projects Section Start---------------------
+let box=document.getElementById("cards-container");
+document.querySelector(".prevbtn").addEventListener("click",()=>{
+  let width=box.clientWidth;
+  box.scrollLeft=box.scrollLeft-width;
+  console.log(width);
+})
+document.querySelector(".nextbtn").addEventListener("click",()=>{
+  let width=box.clientWidth;
+  box.scrollLeft=box.scrollLeft+width;
+  console.log(width);
+})
+// ------------- Projects Section End---------------------
